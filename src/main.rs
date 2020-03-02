@@ -1,6 +1,6 @@
-use ruzzy;
+use ruzzystring;
 
 fn main() {
     println!("Hello, world!");
-    ruzzy::levenshtein_distance("kitten", "sitting");
+    ruzzystring::levenshtein_distance("kitten", "sitting");
 }
