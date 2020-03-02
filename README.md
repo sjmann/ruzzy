@@ -1,11 +1,11 @@
 # ruzzystring
 fuzzy matching algorithms written (poorly) in rust
 
-## Currently Implemented:
+### Currently Implemented
 
 * Levenshtein Distance (very simple, needs refactor to be more idiomatic)
 
-## TODO
+### TODO
 
 * Damerau-Levenshtein distance
 * [Longest Common Substring](https://en.wikipedia.org/wiki/Longest_common_substring_problem)
