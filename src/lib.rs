@@ -1,8 +1,8 @@
 use std::cmp;
 
-pub fn levenshtein_distance(a: &str, b:&str) -> u32 {
-    let a_len = a.len() + 1;
-    let b_len = b.len() + 1;
+pub fn levenshtein_distance(str_a: &str, str_b:&str) -> u32 {
+    let a_len = str_a.len() + 1;
+    let b_len = str_b.len() + 1;
 
     let mut matrix: Vec<Vec<usize>> = vec![vec![0; b_len]; a_len];
 
@@ -16,7 +16,7 @@ pub fn levenshtein_distance(a: &str, b:&str) -> u32 {
 
     for j in 1..b_len {
         for i in 1..a_len {
-            let substitution_cost = match a.as_bytes()[i -1] == b.as_bytes()[j - 1] {
+            let substitution_cost = match str_a.as_bytes()[i -1] == str_b.as_bytes()[j - 1] {
                 true => 0,
                 false => 1,
             };
@@ -28,7 +28,7 @@ pub fn levenshtein_distance(a: &str, b:&str) -> u32 {
         }
     }
     println!("{:?}", matrix);
-    matrix[a.len()][b.len()] as u32
+    matrix[str_a.len()][str_b.len()] as u32
 }
 
 #[cfg(test)]
