@@ -31,6 +31,10 @@ pub fn levenshtein_distance(str_a: &str, str_b:&str) -> u32 {
     matrix[str_a.len()][str_b.len()] as u32
 }
 
+pub fn longest_common_substring<'a>(str_a: &str, str_b: &str) -> &'a str {
+    "NOT IMPLEMENTED"
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -43,5 +47,10 @@ mod tests {
     #[test]
     fn levenshtein_distance_kitten_sitting() {
         assert_eq!(levenshtein_distance("kitten", "sitting"), 3);
+    }
+
+    #[test]
+    fn longest_common_substring_puppy_guppy() {
+        assert_eq!(longest_common_substring("puppy", "guppy"), "uppy");
     }
 }
