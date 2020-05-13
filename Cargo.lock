@@ -2,12 +2,5 @@
 # It is not intended for manual editing.
 [[package]]
 name = "ruzzystr"
-version = "0.1.0"
-dependencies = [
- "suffix-tree 0.1.0",
-]
-
-[[package]]
-name = "suffix-tree"
-version = "0.1.0"
+version = "0.1.1"
 

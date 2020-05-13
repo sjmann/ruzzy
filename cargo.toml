@@ -1,6 +1,5 @@
 [workspace]
 
 members = [
-    "ruzzystr",
-    "suffix-tree",
+    "ruzzystr"
 ]
